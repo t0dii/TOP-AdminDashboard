@@ -3,3 +3,25 @@
     margin: 0; 
 }
 
+.container{ 
+    display: grid; 
+    grid-template-columns: 1fr 4fr;
+}
+
+.side-bar{ 
+    display: grid; 
+    background-color: lightskyblue;
+    grid-row: 1/4;
+}
+
+.header{ 
+    display: grid; 
+    grid-template-columns: 2fr;
+    background-color: navajowhite;
+}
+
+.main-content{ 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5px;
+}
