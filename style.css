@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-body, button, input{ 
+body, button, input{
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,103 +18,122 @@ body, button, input{
     background-color: white;
 }
 
-.avatar {
- vertical-align: middle;
- width: 50px;
- height: 50px;
- border-radius: 50%;
+.top-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header-content{ 
-    display: flex; 
-    align-items: center; 
+.bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.header-buttons{ 
-    display: flex; 
-    gap: 12px; 
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-buttons{
+    display: flex;
+    gap: 12px;
 }
 
 .header-buttons button{
-    color: white; 
+    color: white;
     background-color: steelblue;
-    padding: 12px 24px;
-    border-radius: 8px; 
-    border: none; 
+    padding: 10px 24px;
+    border-radius: 8px;
+    border: none;
 }
 
 .side-bar{
     display: grid;
-    background-color: royalblue;
-    grid-row: 1/-1;
+    align-content: start;
+    background-color: #1992D4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
     color: white;
 }
 
 .side-bar a{
     display: flex;
+    align-items: center;
     font-size: 20px;
-    gap: 20px; 
+    gap: 20px;
 }
-/*side bar divs here*/
 
 .main-content{
     display: grid;
     background-color: ghostwhite;
     gap: 15px;
-    border: 1px solid grey;
     grid-template-columns: 2fr 1fr;
+    padding: 20px;
 }
+
 .project-header{
-    display: grid;
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
 }
+
 .project-cards{
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 3 equal-width columns */
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    height: 100%;
 }
+
 .card{
-    display: grid;
-    padding: 5px 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 12px;
-    height: 200px;
     border-left: 10px solid orange;
     text-align: left;
 }
 
-.card img{ 
-    align-items: right;
-}
-.announcement{
+.announcement-cards{
     display: grid;
-    padding: 5px 10px;
+    gap: 20px;
+    align-content: start;
+}
+
+.announcement{
+    padding: 20px;
     background-color: white;
     border-radius: 12px;
-    text-align: left;
-
 }
 
-.announcement-cards{ 
-    display: grid; 
+.announcement-item{
+    padding: 12px 0;
 }
-.announcement-header{
-    display: grid;
-    grid-column: 1/-1
+
+.announcement-item:not(:last-child){
+    border-bottom: 1px solid lightgrey;
 }
 
 .trending{
     display: grid;
-    padding: 5px 10px;
+    gap: 16px;
+    padding: 20px;
     background-color: white;
     border-radius: 12px;
-    text-align: left;
+}
+
+.trending-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .trending-header{
     display: grid;
-    padding-top: 10%;
 }
 
 .avatar-trend{
@@ -122,5 +141,4 @@ body, button, input{
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    
 }
