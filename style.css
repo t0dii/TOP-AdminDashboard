@@ -3,8 +3,8 @@
     margin: 0;
 }
 
-h3 + p{ 
-    margin-top: 0;
+body, button, input{ 
+    font-family: 'Roboto', sans-serif;
 }
 
 .container{
@@ -16,6 +16,30 @@ h3 + p{
 .header{
     display: grid;
     background-color: white;
+}
+
+.avatar {
+ vertical-align: middle;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+}
+
+.header-content{ 
+    display: flex; 
+    align-items: center; 
+}
+.header-buttons{ 
+    display: flex; 
+    gap: 12px; 
+}
+
+.header-buttons button{
+    color: white; 
+    background-color: steelblue;
+    padding: 12px 24px;
+    border-radius: 8px; 
+    border: none; 
 }
 
 .side-bar{
@@ -71,6 +95,10 @@ h3 + p{
     text-align: left;
 
 }
+
+.announcement-cards{ 
+    display: grid; 
+}
 .announcement-header{
     display: grid;
     grid-column: 1/-1
@@ -87,4 +115,12 @@ h3 + p{
 .trending-header{
     display: grid;
     padding-top: 10%;
+}
+
+.avatar-trend{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
 }
